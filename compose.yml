@@ -1,0 +1,7 @@
+services:
+  psql_ubuntu:
+    env_file:
+        - environment_variables.env
+    build: .
+    ports:
+      - "5432:5432"
